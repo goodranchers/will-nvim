@@ -29,5 +29,11 @@ return {
       style = "dark", -- Example configuration: Choose between "dark" or "light"
     })
     vim.cmd.colorscheme("vague") -- Apply the colorscheme
+    vim.cmd(
+      [[hi Directory guifg=#FF0000 ctermfg=1]]
+    )
+    vim.cmd(
+      [[hi Folded guifg=#808080 ctermfg=244]]
+    )
   end,
 }
