@@ -133,6 +133,18 @@ vim.keymap.set(
   }
 )
 
+-- Toggle Git Blame
+vim.keymap.set(
+  "n",
+  "<leader>bb",
+  ":GitBlameToggle<CR>",
+  {
+    noremap = true,
+    silent = true,
+    desc = "Git Blame",
+  }
+)
+
 -- Require Harpoon modules
 local mark = require("harpoon.mark")
 local ui = require("harpoon.ui")

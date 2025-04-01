@@ -7,3 +7,5 @@ foo.*
 *.log
 data
 undo/*
+
+lazy-lock.json

@@ -16,3 +16,10 @@ vim.o.undofile = true
 -- Set the directory where undo files will be stored
 vim.o.undodir = vim.fn.stdpath("config")
   .. "/undo"
+
+vim.api.nvim_set_keymap(
+  "v",
+  "p",
+  '"_dP',
+  { noremap = true, silent = true }
+)
